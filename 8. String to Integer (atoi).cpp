@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class Solution {
 public:
     int myAtoi(string s) {
@@ -28,3 +33,38 @@ public:
         return ((int)result * sign);
     }
 };
+
+// second sultion :
+/*
+class Solution {
+public:
+    int myAtoi(std::string s) {
+        int sign = 1;
+        long result = 0;
+        int i = 0;
+
+        // Skipping whitespace characters
+        while (isspace(s[i]))
+            i++;
+
+        // Checking for optional sign
+        if (s[i] == '+' || s[i] == '-') {
+            sign = (s[i] == '-') ? -1 : 1;
+            i++;
+        }
+
+        // Calculating the result
+        while (isdigit(s[i])) {
+            result = result * 10 + (s[i] - '0');
+
+            // Handling overflow
+            if (result * sign > INT_MAX) return INT_MAX;
+            if (result * sign < INT_MIN) return INT_MIN;
+
+            i++;
+        }
+
+        return result * sign;
+    }
+};
+*/
