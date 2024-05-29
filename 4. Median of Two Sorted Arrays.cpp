@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   4. Median of Two Sorted Arrays.cpp                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zelabbas <zelabbas@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/29 11:51:16 by zelabbas          #+#    #+#             */
+/*   Updated: 2024/05/29 11:51:34 by zelabbas         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
