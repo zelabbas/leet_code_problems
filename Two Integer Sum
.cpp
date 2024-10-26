@@ -36,6 +36,32 @@ public:
 	}
 };
 
+ // another solution using TWO POINTERS:
+class Solution {
+public:
+	vector<int> twoSum(vector<int>& nums, int target) {
+        int i = 0;
+        int j = nums.size() - 1;
+        vector<int> _res;
+
+
+        while(j > i) {
+            int sum = (nums[j] + nums[i]);
+            if (sum == target) {
+                _res.push_back(i + 1);
+                _res.push_back(j + 1);
+                return (_res);
+            }
+            if (sum > target)
+                j--;
+            else if (target > sum)
+                i++;
+        }
+        return (_res);
+	}
+};
+
+
 
 int main() {
 
