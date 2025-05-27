@@ -20,6 +20,7 @@ class Solution {
         for (int num : nums) {
             frequencyMap[num]++;
         }
+        
         // Create a max heap based on frequency using  class std::priority_queue<std::pair<int, int>>
         // A standard container automatically sorting its contents.
 
